@@ -9,20 +9,22 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "department")
+@Table(name = "Organization")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Department {
+public class Organization {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Long organizationId;
     private String name;
+    private String address;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "employeeId")
+    private List<Employee> employees;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "departmentId")
-    private List<Employee> employees;
-    private String position;
+    private List<Department> departments;
 }
