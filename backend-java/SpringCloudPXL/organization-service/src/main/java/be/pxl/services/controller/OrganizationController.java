@@ -30,7 +30,7 @@ public class OrganizationController {
         return new ResponseEntity(organizationService.getOrganizationByIdWithDepartmentsAndEmployees(id), HttpStatus.OK);
     }
 
-    @GetMapping("/{id}/with-departments-and-employees")
+    @GetMapping("/{id}/with-employees")
     public ResponseEntity findByIdWithEmployees(@PathVariable Long id) {
         return new ResponseEntity(organizationService.getOrganizationByIdWithEmployees(id), HttpStatus.OK);
     }
