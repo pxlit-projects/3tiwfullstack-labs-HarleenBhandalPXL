@@ -46,7 +46,7 @@ public class OrganizationService implements IOrganizationService {
 
     @Override
     public OrganizationResponse getOrganizationByIdWithDepartmentsAndEmployees(Long id) {
-        Organization organization = organizationRepository.findOrganizationByIdWithEmployees(id).orElse(null);
+        Organization organization = organizationRepository.getOrganizationByIdWithDepartmentsAndEmployees(id).orElse(null);
 
         if (organization == null) {
             return null;

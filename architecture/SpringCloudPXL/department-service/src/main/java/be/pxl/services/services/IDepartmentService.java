@@ -2,8 +2,6 @@ package be.pxl.services.services;
 
 import be.pxl.services.domain.dto.DepartmentRequest;
 import be.pxl.services.domain.dto.DepartmentResponse;
-import be.pxl.services.domain.dto.EmployeeRequest;
-import be.pxl.services.domain.dto.EmployeeResponse;
 
 import java.util.List;
 
