@@ -21,10 +21,12 @@ public class Organization {
 
     private String name;
     private String address;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "employeeId")
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "employeeId")
+    @Transient
     private List<Employee> employees;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "departmentId")
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "departmentId")
+    @Transient
     private List<Department> departments;
 }

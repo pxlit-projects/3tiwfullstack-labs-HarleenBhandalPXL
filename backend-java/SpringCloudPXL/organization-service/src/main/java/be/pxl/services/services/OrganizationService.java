@@ -15,13 +15,14 @@ public class OrganizationService implements IOrganizationService {
 
     @Override
     public OrganizationResponse getOrganizationById(Long id) {
-        Organization organization = organizationRepository.findById(id).orElse(null);
+//        Organization organization = organizationRepository.findById(id).orElse(null);
+//
+//        if (organization == null) {
+//            return null;
+//        }
 
-        if (organization == null) {
-            return null;
-        }
-
-        return mapToOrganizationResponse(organization);
+//        return mapToOrganizationResponse(organization);
+        return null;
     }
 
     private OrganizationResponse mapToOrganizationResponse(Organization organization) {
@@ -35,34 +36,37 @@ public class OrganizationService implements IOrganizationService {
 
     @Override
     public OrganizationResponse getOrganizationByIdWithDepartments(Long id) {
-        Organization organization = organizationRepository.findOrganizationByIdWithDepartments(id).orElse(null);
+//        Organization organization = organizationRepository.findOrganizationByIdWithDepartments(id).orElse(null);
+//
+//        if (organization == null) {
+//            return null;
+//        }
 
-        if (organization == null) {
-            return null;
-        }
-
-        return mapToOrganizationResponse(organization);
+//        return mapToOrganizationResponse(organization);
+        return null;
     }
 
     @Override
     public OrganizationResponse getOrganizationByIdWithDepartmentsAndEmployees(Long id) {
-        Organization organization = organizationRepository.getOrganizationByIdWithDepartmentsAndEmployees(id).orElse(null);
+//        Organization organization = organizationRepository.getOrganizationByIdWithDepartmentsAndEmployees(id).orElse(null);
 
-        if (organization == null) {
-            return null;
-        }
+//        if (organization == null) {
+//            return null;
+//        }
 
-        return mapToOrganizationResponse(organization);
+//        return mapToOrganizationResponse(organization);
+        return null;
     }
 
     @Override
     public OrganizationResponse getOrganizationByIdWithEmployees(Long id) {
-        Organization organization = organizationRepository.findOrganizationByIdWithEmployees(id).orElse(null);
+//        Organization organization = organizationRepository.findOrganizationByIdWithEmployees(id).orElse(null);
 
-        if (organization == null) {
-            return null;
-        }
+//        if (organization == null) {
+//            return null;
+//        }
 
-        return mapToOrganizationResponse(organization);
+//        return mapToOrganizationResponse(organization);
+        return null;
     }
 }

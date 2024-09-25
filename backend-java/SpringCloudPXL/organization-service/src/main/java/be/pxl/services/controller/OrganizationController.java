@@ -22,16 +22,19 @@ public class OrganizationController {
 
     @GetMapping("/{id}/with-departments")
     public ResponseEntity findByIdWithDepartments(@PathVariable Long id) {
-        return new ResponseEntity(organizationService.getOrganizationByIdWithDepartments(id), HttpStatus.OK);
+//        return new ResponseEntity(organizationService.getOrganizationByIdWithDepartments(id), HttpStatus.OK);
+        return null;
     }
 
     @GetMapping("/{id}/with-departments-and-employees")
     public ResponseEntity findByIdWithDepartmentsAndEmployees(@PathVariable Long id) {
-        return new ResponseEntity(organizationService.getOrganizationByIdWithDepartmentsAndEmployees(id), HttpStatus.OK);
+//        return new ResponseEntity(organizationService.getOrganizationByIdWithDepartmentsAndEmployees(id), HttpStatus.OK);
+        return null;
     }
 
     @GetMapping("/{id}/with-employees")
     public ResponseEntity findByIdWithEmployees(@PathVariable Long id) {
-        return new ResponseEntity(organizationService.getOrganizationByIdWithEmployees(id), HttpStatus.OK);
+//        return new ResponseEntity(organizationService.getOrganizationByIdWithEmployees(id), HttpStatus.OK);
+        return null;
     }
 }
