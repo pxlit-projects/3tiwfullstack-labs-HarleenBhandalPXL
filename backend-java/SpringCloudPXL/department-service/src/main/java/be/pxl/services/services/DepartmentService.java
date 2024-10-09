@@ -66,6 +66,11 @@ public class DepartmentService implements IDepartmentService {
     public List<DepartmentResponse> getDepartmentByOrganizationWithEmployees(Long organizationId) {
         List<Department> departments = Collections.emptyList();//departmentRepository.findByOrganizationWithEmployees(organizationId);
 
+//        EmployeeClient
+//
+//        Lijst employees        client.getEmployeesByOrganizationId
+//                departem
+
         return departments.stream().map(this::mapToDepartmentResponse).toList();
     }
 }
