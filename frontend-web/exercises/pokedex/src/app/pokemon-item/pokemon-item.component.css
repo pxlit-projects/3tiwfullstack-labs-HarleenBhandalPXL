@@ -1,7 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 :host {
-  padding: 1rem;
+  padding: 0;
   margin: 0.5rem;
-  border-radius: 3px;
+  border-radius: 20px;
   border: 1px solid #ccc;
   display: block;
+  color: white;
+}
+
+.fire{
+  background: linear-gradient(145deg, #f8e9a1, #ff6f61);
+}
+
+.grass{
+  background: linear-gradient(145deg, #a8e6cf, #dcedc1);
+}
+
+.water{
+  background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+}
+
+:host img {
+  max-width: 300px;
 }

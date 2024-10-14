@@ -1,5 +1,5 @@
-<div>
+<div [ngClass]="pokemon.type" >
   <h1> {{ pokemon.id }} {{ pokemon.name }}</h1>
-  <p> {{ pokemon.type }}</p>
+  <img [src]="pokemon.icon" alt="pokemon.name"/>
 </div>
 
