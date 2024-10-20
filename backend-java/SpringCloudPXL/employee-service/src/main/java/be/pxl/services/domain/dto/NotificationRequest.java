@@ -1,19 +1,15 @@
-package be.pxl.services.domain;
+package be.pxl.services.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data //Getters & Setters
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Notification {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private Long id;
-
+public class NotificationRequest {
     private String from;
     private String to;
     private String subject;
