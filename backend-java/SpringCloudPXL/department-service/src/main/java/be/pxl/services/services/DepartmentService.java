@@ -71,6 +71,7 @@ public class DepartmentService implements IDepartmentService {
 //        Lijst employees        client.getEmployeesByOrganizationId
 //                departem
 
-        return departments.stream().map(this::mapToDepartmentResponse).toList();
+//        return departments.stream().map(this::mapToDepartmentResponse).toList();
+        return null;
     }
 }
